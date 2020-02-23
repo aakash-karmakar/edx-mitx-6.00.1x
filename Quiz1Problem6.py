@@ -22,9 +22,9 @@ def sumDigits(N):
 
     # If N < 9 then it has only one digit
     if N < 9:
-        return N
+        return int(N)
     else:
-        return ((N % 10) + sumDigits(N/10))
+        return (int(N % 10) + sumDigits(N/10))
 
 
 # Calling sumDigits, comment out before submitting
